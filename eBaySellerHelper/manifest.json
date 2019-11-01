@@ -15,7 +15,7 @@
   },
   "browser_action": {
     "default_title": "eBay关键词助手",
-    "default_icon": "image/amz19.png"
+    "default_icon": "image/ea-19.png"
   },
   "options_page": "pages/options.html",
   "content_scripts": [
