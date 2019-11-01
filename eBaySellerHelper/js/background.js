@@ -8,6 +8,7 @@ function get_trans(src) {
     }
     // var api_url = "https://translate.google.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q={src}";
     var api_url = "https://translate.google.cn/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q={src}";
+    src = src.replace(/[\u4e00-\u9fa5|\u2013]+/g,'')
     url = api_url.replace("{src}", escape(src));
     /**
      * 
