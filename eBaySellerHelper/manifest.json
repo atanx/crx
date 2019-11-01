@@ -11,7 +11,7 @@
     "persistent": true
   },
   "icons": {
-    "48": "image/amz48.png"
+    "48": "image/ea-48.png"
   },
   "browser_action": {
     "default_title": "eBay关键词助手",
@@ -56,6 +56,6 @@
     "webRequestBlocking"
   ],
   "web_accessible_resources": [
-    "image/logo_48.png"
+    "image/ea-48.png"
   ]
 }
