@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/angular.min.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-init="kw='hello'">
+    <div ng-controller="myCtrl">
+        <line></line>
+        <input ng-model="kw" ng-blur="queryDict()"/>
+        {{ kw }}
+        <table>
+            <tr ng-repeat="x in sites">
+                <td ng-if="$even" style="padding:0px; background-color:#f1f1f1">{{x.Country}} </td>
+                <td ng-if="$even" style="padding:0px; background-color:#f1f1f1">{{x.Name}}</td>
+                <td ng-if="$even" style="padding:0px; background-color:#f1f1f1">{{x.Url  }}</td>
+
+                <td ng-if="$odd" style="padding:0px;">{{x.Country}} </td>
+                <td ng-if="$odd" style="padding:0px;">{{x.Name}}</td>
+                <td ng-if="$odd" style="padding:0px;">{{x.Url  }}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+
+</html>
